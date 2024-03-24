@@ -21,6 +21,8 @@ export const signInWithGoogle = () => {
         .then((result) => {
             const user = result.user;
             sessionStorage.setItem('user', user.displayName);
+
+            // TODO: send to the backend
             
             // reload the page
             window.location.reload();
