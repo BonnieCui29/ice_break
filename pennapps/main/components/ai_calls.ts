@@ -15,7 +15,7 @@ export async function TestAI() {
 }
 
 export async function GenerateAFormQuestions({ EventName, EventType, TargetAudience, TargetAudienceDescription }: { EventName: string, EventType: string, TargetAudience: string, TargetAudienceDescription: string }) {
-    const prompt = `Event Name: ${EventName}\nEvent Type: ${EventType}\nTarget Audience: ${TargetAudience}\nTarget Audience Description: ${TargetAudienceDescription}\n Generate 6 questions for a form (just the questions) that will be letter used to collect information from the audience. 
+    const prompt = `Event Name: ${EventName}\nEvent Type: ${EventType}\nTarget Audience: ${TargetAudience}\nTarget Audience Description: ${TargetAudienceDescription}\n Generate 3 engaging icebreaker questions designed specifically for attendees at this event to foster conversation and connection. 
     So that we can use those information for ice breaker for the event
     Questions = {'generatedQuestion': string}
     Return: Array<Recipe>`;
